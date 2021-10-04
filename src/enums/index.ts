@@ -1,0 +1,13 @@
+export { FamcAdop } from './famcAdop.enum';
+export { FamcStat } from './famcStat.enum';
+export { Medi } from './medi.enum';
+export { Mime } from './mime.enum';
+export { MultimediaFormat } from './multimediaFormat.enum';
+export { NameType } from './nameType.enum';
+export { Pedi } from './pedi.enum';
+export { PointerTarget } from './pointerTarget.enum';
+export { QualityOfData } from './qualityOfData.enum';
+export { Restriction } from './restriction.enum';
+export { Role } from './role.enum';
+export { Sex } from './sex.enum';
+export { Tag } from './tag.enum';

@@ -1,0 +1,16 @@
+export enum Medi {
+  Audio = "AUDIO",
+  Book = "Book",
+  Card = "CARD",
+  Electronic = "ELECTRONIC",
+  Fiche = "FICHE",
+  Film = "FILM",
+  Magazine = "MAGAZINE",
+  Manuscript = "MANUSCRIPT",
+  Map = "MAP",
+  Newspaper = "NEWSPAPER",
+  Photo = "PHOTO",
+  Thumbstone = "THUMBSTONE",
+  Video = "VIDEO",
+  Other = "OTHER",
+}
