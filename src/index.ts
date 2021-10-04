@@ -3,7 +3,6 @@ export * from './associationStructure';
 export * from './changeDate';
 export * from './creationDate';
 export * from './dataset';
-export * from '../../gedcom2json/src/models/entryDataset';
 export * from './eventDetail';
 export * from './familyAttributeStructure';
 export * from './familyEventDetail';

@@ -1,10 +1,10 @@
 {
   "name": "@ancestable/gedcom7models",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Models for representation of GEDCOM v7",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": ["/lib/**/*"],
   "scripts": {
     "build": "tsc",
     "prepare" : "npm run build"
