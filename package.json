@@ -1,6 +1,6 @@
 {
-  "name": "gedcom7models",
-  "version": "1.0.0",
+  "name": "@ancestable/gedcom7models",
+  "version": "1.0.2",
   "description": "Models for representation of GEDCOM v7",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

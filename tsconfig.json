@@ -6,6 +6,6 @@
     "outDir": "./lib",
     "strict": true
   },
-  "include": ["src"],
+  "include": ["src", "../gedcom2json/src/models/entryDataset.ts"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
