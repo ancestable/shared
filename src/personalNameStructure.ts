@@ -1,5 +1,5 @@
-import { Tag } from "../gedcom/enums/tag.enum";
-import { NameType } from "../gedcom/enums/nameType.enum";
+import { Tag } from "./enums/tag.enum";
+import { NameType } from "./enums/nameType.enum";
 import { NoteStructure } from "./noteStructure";
 import { PersonalNamePieces } from "./personalNamePieces";
 import { SourceCitation } from "./sourceCitation";

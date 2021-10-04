@@ -1,12 +1,12 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";
 import { IdentifierStructure } from "./identifierStructure";
 import { NoteStructure } from "./noteStructure";
-import { Restriction } from "../gedcom/enums/restriction.enum";
+import { Restriction } from "./enums/restriction.enum";
 import { SourceCitation } from "./sourceCitation";
-import { MultimediaFormat } from "../gedcom/enums/multimediaFormat.enum";
-import { Medi } from "../gedcom/enums/medi.enum";
+import { MultimediaFormat } from "./enums/multimediaFormat.enum";
+import { Medi } from "./enums/medi.enum";
 
 export interface MultimediaRecord {
   [Tag.Object]: {

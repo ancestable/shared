@@ -1,5 +1,5 @@
 import { FamcAdop } from "./enums/famcAdop.enum";
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { IndividualEventDetail } from "./individualEventDetail";
 import { FamPointer } from "./pointer";
 

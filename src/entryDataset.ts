@@ -1,13 +1,20 @@
-import { Entry } from "../entry";
 import { Tag } from ".";
+import { FamilyRecord } from "./familyRecord";
+import { Header } from "./header";
+import { IndividualRecord } from "./individualRecord";
+import { MultimediaRecord } from "./multimediaRecord";
+import { RepositoryRecord } from "./repositoryRecord";
+import { SharedNoteRecord } from "./sharedNoteRecord";
+import { SourceRecord } from "./sourceRecord";
+import { SubmitterRecord } from "./submitterRecord";
 
 export interface EntryDataset {
-  [Tag.Header]: Entry;
-  [Tag.Family]: Entry[];
-  [Tag.Individual]: Entry[];
-  [Tag.Media]: Entry[];
-  [Tag.Repository]: Entry[];
-  [Tag.Note]: Entry[];
-  [Tag.Source]: Entry[];
-  [Tag.Submitter]: Entry[];
+  [Tag.Header]: Header;
+  [Tag.Family]: FamilyRecord[];
+  [Tag.Individual]: IndividualRecord[];
+  [Tag.Media]: MultimediaRecord[];
+  [Tag.Repository]: RepositoryRecord[];
+  [Tag.Note]: SharedNoteRecord[];
+  [Tag.Source]: SourceRecord[];
+  [Tag.Submitter]: SubmitterRecord[];
 }

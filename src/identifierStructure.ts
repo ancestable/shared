@@ -1,4 +1,4 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 
 export interface IdentifierStructureREFN {
   type: Tag.Reference;

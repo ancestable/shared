@@ -1,5 +1,5 @@
-import { MultimediaFormat } from "../gedcom/enums/multimediaFormat.enum";
-import { Tag } from "../gedcom/enums/tag.enum";
+import { MultimediaFormat } from "./enums/multimediaFormat.enum";
+import { Tag } from "./enums/tag.enum";
 import { NoteStructure } from "./noteStructure";
 
 export interface SourceRepositoryCitation {

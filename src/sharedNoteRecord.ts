@@ -1,9 +1,9 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";
 import { IdentifierStructure } from "./identifierStructure";
 import { SourceCitation } from "./sourceCitation";
-import { Mime } from "../gedcom/enums/mime.enum";
+import { Mime } from "./enums/mime.enum";
 
 export interface SharedNoteRecord {
   [Tag.SharedNoteRecord]: {

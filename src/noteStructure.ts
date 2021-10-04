@@ -1,5 +1,5 @@
-import { Mime } from "../gedcom/enums/mime.enum";
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Mime } from "./enums/mime.enum";
+import { Tag } from "./enums/tag.enum";
 import { SNotePointer } from "./pointer";
 import { SourceCitation } from "./sourceCitation";
 

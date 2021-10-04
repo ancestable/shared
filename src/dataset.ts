@@ -1,4 +1,4 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { FamilyRecord } from "./familyRecord";
 import { Header } from "./header";
 import { IndividualRecord } from "./individualRecord";

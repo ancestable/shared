@@ -1,4 +1,4 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { AddressStructure } from "./addressStructure";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";

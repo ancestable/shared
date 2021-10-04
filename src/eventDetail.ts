@@ -1,10 +1,10 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { AddressStructure } from "./addressStructure";
 import { AssociationStructure } from "./associationStructure";
 import { MultimediaLink } from "./multimediaLink";
 import { NoteStructure } from "./noteStructure";
 import { PlaceStructure } from "./placeStructure";
-import { Restriction } from "../gedcom/enums/restriction.enum";
+import { Restriction } from "./enums/restriction.enum";
 import { SourceCitation } from "./sourceCitation";
 
 export interface EventDetail {

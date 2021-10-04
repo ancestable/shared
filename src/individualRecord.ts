@@ -1,8 +1,8 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { AssociationStructure } from "./associationStructure";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";
-import { FamcStat } from "../gedcom/enums/famcStat.enum";
+import { FamcStat } from "./enums/famcStat.enum";
 import { IdentifierStructure } from "./identifierStructure";
 import { IndividualAttributeStructure } from "./individualAttributeStructure";
 import { IndividualEventStructure } from "./individualEventStructure";
@@ -11,10 +11,10 @@ import { NonEventStructure } from "./nonEventStructure";
 import { NoteStructure } from "./noteStructure";
 import { PersonalNameStructure } from "./personalNameStructure";
 import { FamPointer, IndiPointer, SubmPointer } from "./pointer";
-import { Restriction } from "../gedcom/enums/restriction.enum";
+import { Restriction } from "./enums/restriction.enum";
 import { SourceCitation } from "./sourceCitation";
 import { Sex } from "./enums/sex.enum";
-import { Pedi } from "../gedcom/enums/pedi.enum";
+import { Pedi } from "./enums/pedi.enum";
 
 export interface IndividualRecord {
   [Tag.Individual]: {

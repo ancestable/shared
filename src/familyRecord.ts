@@ -1,4 +1,4 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { AssociationStructure } from "./associationStructure";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";
@@ -8,7 +8,7 @@ import { MultimediaLink } from "./multimediaLink";
 import { NonEventStructure } from "./nonEventStructure";
 import { NoteStructure } from "./noteStructure";
 import { IndiPointer, SubmPointer } from "./pointer";
-import { Restriction } from "../gedcom/enums/restriction.enum";
+import { Restriction } from "./enums/restriction.enum";
 import { SourceCitation } from "./sourceCitation";
 
 export interface FamilyRecord {

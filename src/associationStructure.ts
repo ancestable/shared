@@ -1,7 +1,7 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { NoteStructure } from "./noteStructure";
 import { IndiPointer } from "./pointer";
-import { Role } from "../gedcom/enums/role.enum";
+import { Role } from "./enums/role.enum";
 import { SourceCitation } from "./sourceCitation";
 
 export interface AssociationStructure {

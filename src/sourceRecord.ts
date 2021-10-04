@@ -1,4 +1,4 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { ChangeDate } from "./changeDate";
 import { CreationDate } from "./creationDate";
 import { IdentifierStructure } from "./identifierStructure";
@@ -6,7 +6,7 @@ import { MultimediaLink } from "./multimediaLink";
 import { NoteStructure } from "./noteStructure";
 import { PlaceStructure } from "./placeStructure";
 import { SourceRepositoryCitation } from "./sourceRepositoryCitation";
-import { Mime } from "../gedcom/enums/mime.enum";
+import { Mime } from "./enums/mime.enum";
 
 export interface SourceRecord {
   [Tag.Source]: {

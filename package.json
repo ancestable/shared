@@ -1,0 +1,26 @@
+{
+  "name": "gedcom7models",
+  "version": "1.0.0",
+  "description": "Models for representation of GEDCOM v7",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancestable/gedcom7models.git"
+  },
+  "keywords": ["GEDCOM", "models"],
+  "author": "Christian Bühlmeyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ancestable/gedcom7models/issues"
+  },
+  "homepage": "https://github.com/ancestable/gedcom7models#readme",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}

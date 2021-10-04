@@ -1,4 +1,4 @@
-import { PointerTarget } from "../gedcom/enums/pointerTarget.enum";
+import { PointerTarget } from "./enums/pointerTarget.enum";
 
 export interface Pointer {
   reference: string;

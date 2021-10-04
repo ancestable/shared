@@ -1,10 +1,10 @@
-import { Tag } from "../gedcom/enums/tag.enum";
+import { Tag } from "./enums/tag.enum";
 import { MultimediaLink } from "./multimediaLink";
 import { NoteStructure } from "./noteStructure";
 import { SourPointer } from "./pointer";
-import { QualityOfData } from "../gedcom/enums/qualityOfData.enum";
-import { Mime } from "../gedcom/enums/mime.enum";
-import { Role } from "../gedcom/enums/role.enum";
+import { QualityOfData } from "./enums/qualityOfData.enum";
+import { Mime } from "./enums/mime.enum";
+import { Role } from "./enums/role.enum";
 
 export interface SourceCitation {
   [Tag.Source]: {
