@@ -9,33 +9,31 @@ import { SourceRepositoryCitation } from "./sourceRepositoryCitation";
 import { Mime } from "./enums/mime.enum";
 
 export interface SourceRecord {
-  [Tag.Source]: {
-    referenceId: string;
-    [Tag.Data]?: {
-      [Tag.Event]?: {
-        value: string;
-        [Tag.Date]?: {
-          value: string;
-          [Tag.Phrase]?: string;
-        };
-        placeStructure?: PlaceStructure;
-      };
-      [Tag.Agency]?: string;
-      noteStructures?: NoteStructure[];
-    }
-    [Tag.Author]?: string;
-    [Tag.Abbreviation]?: string;
-    [Tag.Publication]?: string;
-    [Tag.Text]?: {
+  referenceId: string;
+  [Tag.Data]?: {
+    [Tag.Event]?: {
       value: string;
-      [Tag.Mime]?: Mime;
-      [Tag.Language]: string;
+      [Tag.Date]?: {
+        value: string;
+        [Tag.Phrase]?: string;
+      };
+      placeStructure?: PlaceStructure;
     };
-    sourceRepositoryCitation?: SourceRepositoryCitation[];
-    identifierStructures?: IdentifierStructure[];
+    [Tag.Agency]?: string;
     noteStructures?: NoteStructure[];
-    multiMediaLinks?: MultimediaLink[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
   }
+  [Tag.Author]?: string;
+  [Tag.Abbreviation]?: string;
+  [Tag.Publication]?: string;
+  [Tag.Text]?: {
+    value: string;
+    [Tag.Mime]?: Mime;
+    [Tag.Language]: string;
+  };
+  sourceRepositoryCitation?: SourceRepositoryCitation[];
+  identifierStructures?: IdentifierStructure[];
+  noteStructures?: NoteStructure[];
+  multiMediaLinks?: MultimediaLink[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

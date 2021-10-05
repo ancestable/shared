@@ -17,43 +17,41 @@ import { Sex } from "./enums/sex.enum";
 import { Pedi } from "./enums/pedi.enum";
 
 export interface IndividualRecord {
-  [Tag.Individual]: {
-    referenceId: string;
-    [Tag.Restriction]?: Restriction[];
-    personalNameStructures?: PersonalNameStructure[];
-    [Tag.Sex]?: Sex;
-    individualAttributeStructures?: IndividualAttributeStructure[];
-    individualEventStructures?: IndividualEventStructure[];
-    nonEventStructures?: NonEventStructure[];
-    [Tag.FamilyChild]?: {
-      reference: FamPointer;
-      [Tag.Pedigree]?: {
-        value: Pedi;
-        [Tag.Phrase]?: string;
-      };
-      [Tag.Status]?: {
-        value: FamcStat;
-        [Tag.Phrase]?: string;
-      };
-      noteStructures?: NoteStructure[];
-    }[];
-    [Tag.FamilySpouse]?: {
-      reference: FamPointer;
-      noteStructures?: NoteStructure[];
-    }[];
-    [Tag.Submitter]?: SubmPointer[];
-    associationStructures?: AssociationStructure[];
-    [Tag.Alias]?: {
-      reference: IndiPointer;
+  referenceId: string;
+  [Tag.Restriction]?: Restriction[];
+  personalNameStructures?: PersonalNameStructure[];
+  [Tag.Sex]?: Sex;
+  individualAttributeStructures?: IndividualAttributeStructure[];
+  individualEventStructures?: IndividualEventStructure[];
+  nonEventStructures?: NonEventStructure[];
+  [Tag.FamilyChild]?: {
+    reference: FamPointer;
+    [Tag.Pedigree]?: {
+      value: Pedi;
       [Tag.Phrase]?: string;
-    }[];
-    [Tag.AncestorInterest]?: SubmPointer[];
-    [Tag.DescendantInt]?: SubmPointer[];
-    identifierStructures?: IdentifierStructure[];
+    };
+    [Tag.Status]?: {
+      value: FamcStat;
+      [Tag.Phrase]?: string;
+    };
     noteStructures?: NoteStructure[];
-    sourceCitations?: SourceCitation[];
-    multimediaLinks?: MultimediaLink[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  }[];
+  [Tag.FamilySpouse]?: {
+    reference: FamPointer;
+    noteStructures?: NoteStructure[];
+  }[];
+  [Tag.Submitter]?: SubmPointer[];
+  associationStructures?: AssociationStructure[];
+  [Tag.Alias]?: {
+    reference: IndiPointer;
+    [Tag.Phrase]?: string;
+  }[];
+  [Tag.AncestorInterest]?: SubmPointer[];
+  [Tag.DescendantInt]?: SubmPointer[];
+  identifierStructures?: IdentifierStructure[];
+  noteStructures?: NoteStructure[];
+  sourceCitations?: SourceCitation[];
+  multimediaLinks?: MultimediaLink[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

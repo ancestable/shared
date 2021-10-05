@@ -6,19 +6,17 @@ import { SourceCitation } from "./sourceCitation";
 import { Mime } from "./enums/mime.enum";
 
 export interface SharedNoteRecord {
-  [Tag.SharedNoteRecord]: {
-    referenceId: string;
+  referenceId: string;
+  value: string;
+  [Tag.Mime]?: Mime;
+  [Tag.Language]?: string;
+  [Tag.Translation]?: {
     value: string;
     [Tag.Mime]?: Mime;
     [Tag.Language]?: string;
-    [Tag.Translation]?: {
-      value: string;
-      [Tag.Mime]?: Mime;
-      [Tag.Language]?: string;
-    }[];
-    sourceCitations?: SourceCitation[];
-    identifierStructures?: IdentifierStructure[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  }[];
+  sourceCitations?: SourceCitation[];
+  identifierStructures?: IdentifierStructure[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

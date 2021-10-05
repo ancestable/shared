@@ -7,19 +7,17 @@ import { MultimediaLink } from "./multimediaLink";
 import { NoteStructure } from "./noteStructure";
 
 export interface SubmitterRecord {
-  [Tag.Submitter]: {
-    referenceId: string;
-    [Tag.Name]: string;
-    addressStructure?: AddressStructure;
-    [Tag.Phone]?: string[];
-    [Tag.Email]?: string[];
-    [Tag.Fax]?: string[];
-    [Tag.Web]?: string[];
-    multimediaLinks?: MultimediaLink[];
-    [Tag.Language]?: string[];
-    identifierStructures?: IdentifierStructure[];
-    noteStructures?: NoteStructure[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  referenceId: string;
+  [Tag.Name]: string;
+  addressStructure?: AddressStructure;
+  [Tag.Phone]?: string[];
+  [Tag.Email]?: string[];
+  [Tag.Fax]?: string[];
+  [Tag.Web]?: string[];
+  multimediaLinks?: MultimediaLink[];
+  [Tag.Language]?: string[];
+  identifierStructures?: IdentifierStructure[];
+  noteStructures?: NoteStructure[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

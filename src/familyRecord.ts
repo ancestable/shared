@@ -12,21 +12,19 @@ import { Restriction } from "./enums/restriction.enum";
 import { SourceCitation } from "./sourceCitation";
 
 export interface FamilyRecord {
-  [Tag.Family]: {
-    referenceId: string;
-    [Tag.Restriction]?: Restriction[];
-    [Tag.Husband]?: IndiPointer;
-    [Tag.Wife]?: IndiPointer;
-    [Tag.Child]?: IndiPointer[];
-    familyAttributeStructures?: FamilyAttributeStructure[];
-    familyEventStructures?: FamilyEventStructure[];
-    nonEventStructures?: NonEventStructure[];
-    associationStructures?: AssociationStructure[];
-    [Tag.Submitter]?: SubmPointer[];
-    noteStructures?: NoteStructure[];
-    sourceCitations?: SourceCitation[];
-    multimediaLinks?: MultimediaLink[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  referenceId: string;
+  [Tag.Restriction]?: Restriction[];
+  [Tag.Husband]?: IndiPointer;
+  [Tag.Wife]?: IndiPointer;
+  [Tag.Child]?: IndiPointer[];
+  familyAttributeStructures?: FamilyAttributeStructure[];
+  familyEventStructures?: FamilyEventStructure[];
+  nonEventStructures?: NonEventStructure[];
+  associationStructures?: AssociationStructure[];
+  [Tag.Submitter]?: SubmPointer[];
+  noteStructures?: NoteStructure[];
+  sourceCitations?: SourceCitation[];
+  multimediaLinks?: MultimediaLink[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

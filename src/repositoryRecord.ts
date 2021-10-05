@@ -6,17 +6,15 @@ import { IdentifierStructure } from "./identifierStructure";
 import { NoteStructure } from "./noteStructure";
 
 export interface RepositoryRecord {
-  [Tag.Repository]: {
-    referenceId: string;
-    [Tag.Name]: string;
-    addressStructure?: AddressStructure;
-    [Tag.Phone]?: string[];
-    [Tag.Email]?: string[];
-    [Tag.Fax]?: string[];
-    [Tag.Web]?: string[];
-    noteStructures?: NoteStructure[];
-    identifierStructures?: IdentifierStructure[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  referenceId: string;
+  [Tag.Name]: string;
+  addressStructure?: AddressStructure;
+  [Tag.Phone]?: string[];
+  [Tag.Email]?: string[];
+  [Tag.Fax]?: string[];
+  [Tag.Web]?: string[];
+  noteStructures?: NoteStructure[];
+  identifierStructures?: IdentifierStructure[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }

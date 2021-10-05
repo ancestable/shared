@@ -9,28 +9,26 @@ import { MultimediaFormat } from "./enums/multimediaFormat.enum";
 import { Medi } from "./enums/medi.enum";
 
 export interface MultimediaRecord {
-  [Tag.Object]: {
-    referenceId: string;
-    [Tag.Restriction]: Restriction[];
-    [Tag.File]?: {
-      value: string;
-      [Tag.Format]?: {
-        value: MultimediaFormat;
-        [Tag.Media]?: {
-          value: Medi;
-          [Tag.Phrase]?: string;
-        };
+  referenceId: string;
+  [Tag.Restriction]: Restriction[];
+  [Tag.File]?: {
+    value: string;
+    [Tag.Format]?: {
+      value: MultimediaFormat;
+      [Tag.Media]?: {
+        value: Medi;
+        [Tag.Phrase]?: string;
       };
-      [Tag.Title]?: string;
-      [Tag.Translation]?: {
-        value: string;
-        [Tag.Format]: MultimediaFormat;
-      }[];
+    };
+    [Tag.Title]?: string;
+    [Tag.Translation]?: {
+      value: string;
+      [Tag.Format]: MultimediaFormat;
     }[];
-    identifierStructures?: IdentifierStructure[];
-    noteStructures?: NoteStructure[];
-    sourceCitations?: SourceCitation[];
-    changeDate?: ChangeDate;
-    creationDate?: CreationDate;
-  }
+  }[];
+  identifierStructures?: IdentifierStructure[];
+  noteStructures?: NoteStructure[];
+  sourceCitations?: SourceCitation[];
+  changeDate?: ChangeDate;
+  creationDate?: CreationDate;
 }
