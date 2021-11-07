@@ -1,26 +1,30 @@
 {
-  "name": "@ancestable/gedcom7models",
-  "version": "1.0.5",
-  "description": "Models for representation of GEDCOM v7",
+  "name": "@ancestable/shared",
+  "version": "1.0.1",
+  "description": "Shared entities between microservices",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["/lib/**/*"],
+  "files": [
+    "/lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepare" : "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ancestable/gedcom7models.git"
+    "url": "git+https://github.com/ancestable/shared.git"
   },
-  "keywords": ["GEDCOM", "models"],
   "author": "Christian Bühlmeyer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ancestable/gedcom7models/issues"
+    "url": "https://github.com/ancestable/shared/issues"
   },
-  "homepage": "https://github.com/ancestable/gedcom7models#readme",
+  "homepage": "https://github.com/ancestable/shared#readme",
   "devDependencies": {
     "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "windowed-observable": "^1.0.0"
   }
 }

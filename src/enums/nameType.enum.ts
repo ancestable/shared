@@ -1,9 +1,0 @@
-export enum NameType {
-  AKA = 'AKA',
-  BIRTH = 'BIRTH',
-  IMMIGRANT = 'IMMIGRANT',
-  MAIDEN = 'MAIDEN',
-  MARRIED = 'MARRIED',
-  PROFESSIONAL = 'PROFESSIONAL',
-  OTHER = 'OTHER',
-}
