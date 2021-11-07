@@ -20,7 +20,7 @@ export interface SourceCitation {
         value: string;
         [Tag.Mime]?: Mime;
         [Tag.Language]?: string;
-      }
+      }[];
     };
     [Tag.Event]?: {
       value: string;

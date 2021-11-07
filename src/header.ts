@@ -1,3 +1,4 @@
+import { AddressStructure, Note, NoteStructure, SNotePointer } from '.';
 import { Tag } from "./enums/tag.enum";
 
 export interface Header {
@@ -12,6 +13,7 @@ export interface Header {
     [Tag.Name]?: string;
     [Tag.Corporate]?: {
       value?: string;
+      addressStructure?: AddressStructure;
       [Tag.Phone]: string[];
       [Tag.Email]: string[];
       [Tag.Fax]: string[];
@@ -35,4 +37,5 @@ export interface Header {
   [Tag.Corporate]?: string;
   [Tag.Language]?: string;
   [Tag.Place]?: any;
+  noteStructures?: NoteStructure[];
 }

@@ -7,11 +7,11 @@ export type NoteStructure = Note | SNote;
 
 export interface Note {
   value: string;
-  [Tag.Media]?: Mime;
+  [Tag.Mime]?: Mime;
   [Tag.Language]?: string;
   [Tag.Translation]?: {
     value: string;
-    [Tag.Media]?: Mime;
+    [Tag.Mime]?: Mime;
     [Tag.Language]?: string;
   };
   sourceCitations: SourceCitation[];
