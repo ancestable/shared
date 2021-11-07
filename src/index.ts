@@ -1,1 +1,1 @@
-export * from './windowObservable';
+export * from './models';
