@@ -1,3 +1,4 @@
+export * from './baseRecord';
 export * from './datasetModel';
 export * from './familyRecordModel';
 export * from './individualRecordModel';
