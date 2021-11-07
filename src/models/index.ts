@@ -9,3 +9,4 @@ export * from './sourceRecordModel';
 export * from './submitterRecordModel';
 export * from './userModel';
 export * from './windowObservable';
+export * from './enums';

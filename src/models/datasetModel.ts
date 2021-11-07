@@ -1,5 +1,5 @@
 import { IFamilyRecordModel, IIndividualRecordModel, IMultimediaRecordModel, IRepositoryRecordModel, ISharedNoteRecordModel, ISourceRecordModel, ISubmitterRecordModel } from '.';
-import { UserRole } from './enums/userRole.enum';
+import { UserRole } from './enums/userRole';
 
 type UserWithRoles = { [userId: string]: UserRole };
 
