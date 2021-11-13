@@ -8,7 +8,8 @@
     "/lib/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy:styles",
+    "copy:styles": "copyfiles ./styles/* ./lib",
     "prepare": "npm run build"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/ancestable/shared#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {
